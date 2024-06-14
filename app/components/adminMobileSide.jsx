@@ -126,7 +126,11 @@ export default function AdminMobileSideNavigation() {
                           return (
                             <Link href={e.navLink} key={e.id}>
                               <div className="w-[200px] flex items-center justify-around rounded-xl bg-[#C2E8F8] p-2 hover:cursor-pointer">
-                                <Image src={e.navImage} className="w-9" alt />
+                                <Image
+                                  src={e.navImage}
+                                  className="w-9"
+                                  alt=""
+                                />
                                 <p>{e.navName}</p>
                               </div>
                             </Link>

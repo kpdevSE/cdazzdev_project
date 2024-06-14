@@ -72,9 +72,13 @@ export default function AdminStudentManagement() {
                         scope="row"
                         className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                       >
-                        {e.name}
+                        <Link href={`/adminStudentsManagement/${e._id}`}>
+                          {e.name}
+                        </Link>
                       </th>
+
                       <td className="px-6 py-4">{e.email}</td>
+
                       <td className="px-6 py-4">{e.age}</td>
                       <td className="px-6 py-4">{e.course}</td>
                       <td className="px-6 py-4 flex items-center justify-start gap-2">
