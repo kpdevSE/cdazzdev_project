@@ -27,11 +27,17 @@ export default function AdminCourseManagement() {
   return (
     <div className="flex items-start justify-between gap-7 lg:w-full md:w-full w-[90%] mx-auto">
       <AdminSideBar />
-      <div className="lg:w-[80%] md:w-[80%] w-full">
-        <AdminMobileSideNavigation />
-        <h1>Admin Course Management Page</h1>
+      <div className="lg:w-[80%] md:w-[80%] w-full p-2">
         <div className="flex items-center justify-between">
-          <h2 className="font-bold">Available Students</h2>
+          <AdminMobileSideNavigation />
+        </div>
+
+        <div className="mt-10 flex items-start justify-center gap-4 flex-col ">
+          <h1 className="font-bold">ADMIN Course Management</h1>
+          <h1 className="font-bold text-lg">Welcom Back , ADMIN !</h1>
+        </div>
+        <div className="flex items-center justify-between mt-6">
+          <h2 className="font-bold">Available Courses</h2>
           <Link href={"/adminAddCourses"}>
             <button className="w-[200px] h-[40px] bg-lime-950 rounded-lg text-white font-bold">
               Add Courses
@@ -48,7 +54,7 @@ export default function AdminCourseManagement() {
                   <p>{e.duration}</p>
                   <div className="card-actions justify-end">
                     <Link href={`/adminCourseManagement/${e._id}`}>
-                      <button className="btn btn-primary">Buy Now</button>
+                      <button className="btn btn-primary">Enroll Now</button>
                     </Link>
                   </div>
                 </div>
