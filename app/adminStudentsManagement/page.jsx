@@ -54,10 +54,7 @@ export default function AdminStudentManagement() {
                     Category
                   </th>
                   <th scope="col" className="px-6 py-3">
-                    Price
-                  </th>
-                  <th scope="col" className="px-6 py-3">
-                    Action
+                    Course
                   </th>
                 </tr>
               </thead>
@@ -81,20 +78,6 @@ export default function AdminStudentManagement() {
 
                       <td className="px-6 py-4">{e.age}</td>
                       <td className="px-6 py-4">{e.course}</td>
-                      <td className="px-6 py-4 flex items-center justify-start gap-2">
-                        <a
-                          href="#"
-                          className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                        >
-                          Edit
-                        </a>
-                        <a
-                          href="#"
-                          className="font-medium text-red-600 dark:text-blue-500 hover:underline"
-                        >
-                          Delete
-                        </a>
-                      </td>
                     </tr>
                   );
                 })}

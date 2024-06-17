@@ -54,6 +54,7 @@ export default function AdminCoursesID() {
           <p>{course.description}</p>
           <p>{course.duration}</p>
           <button onClick={deletCourses}>Delete</button>
+          <button>Update</button>
         </div>
       </div>
     </div>
