@@ -25,14 +25,14 @@ export default function AdminStudentManagement() {
     fetchData();
   }, []);
   return (
-    <div className="flex items-start justify-between gap-7">
+    <div className="flex items-start justify-between gap-7 bg-[#E8F1F2]">
       <AdminSideBar />
-      <div className="lg:w-[80%] md:w-[80%] w-full">
+      <div className="lg:w-[80%] md:w-[80%] w-full scroll-smooth focus:scroll-auto h-full">
         <AdminMobileSideNavigation />
         <h1 className="text-xl mt-10 font-bold">Admin Student page Page</h1>
 
         <div className="w-full p-2 mt-4">
-          <div className="flex items-center justify-between">
+          <div className="flex lg:items-center justify-between lg:flex-row md:flec-row flex-col gap-4">
             <h2 className="font-bold">Available Students</h2>
             <Link href={"/adminAddStudents"}>
               <button className="w-[200px] h-[40px] bg-lime-950 rounded-lg text-white font-bold">
@@ -40,7 +40,7 @@ export default function AdminStudentManagement() {
               </button>
             </Link>
           </div>
-          <div className="relative overflow-x-auto shadow-md sm:rounded-lg mt-10">
+          <div className="relative overflow-x-auto shadow-md sm:rounded-lg mt-10 overflow-y-auto">
             <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
               <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                 <tr>

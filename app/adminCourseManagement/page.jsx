@@ -49,13 +49,13 @@ export default function AdminCourseManagement() {
           {courses.map((e) => {
             return (
               <div
-                className="card lg:w-96  w-full bg-base-100 shadow-xl"
+                className="card e-full  w-full bg-base-100 shadow-xl"
                 key={e.id}
               >
                 <div className="card-body">
                   <div className="flex items-center justify-between ">
                     <p className="text-lg font-bold">Course Name :</p>
-                    <h2 className="card-title">{e.name}Months</h2>
+                    <h2 className="card-title">{e.name}</h2>
                   </div>
                   <div className="flex items-center justify-between ">
                     <p className="text-lg font-bold">Course Duration :</p>
